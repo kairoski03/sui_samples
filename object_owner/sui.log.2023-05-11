@@ -1,0 +1,44 @@
+2023-05-11T01:38:35.630065Z  INFO sui::client_commands: Showing 13 results.
+2023-05-11T01:38:35.630340Z  INFO sui::client_commands: 0x1b0a6e9147cf4805cef253b8fc8848ca2336feb8476e0b2782052cb8f8117a44
+2023-05-11T01:38:35.630342Z  INFO sui::client_commands: 0x29f4328c8f832a6802192045cca54b4d4d9c42bdb30369e30e90411b72c15337
+2023-05-11T01:38:35.630344Z  INFO sui::client_commands: 0x2a6030a7f1d42743bfc730ffdc4fbb3e31b92ef3aaa44bf419030c41f542f9bb
+2023-05-11T01:38:35.630345Z  INFO sui::client_commands: 0x2b45caa61abea3be232f0ac5fceb3fd5649f63ecf20a9f4c2d5a08fe78addd2f
+2023-05-11T01:38:35.630346Z  INFO sui::client_commands: 0x40cc47af1f42c2b0fbed2fabfb418c177f7753ab7b653ac9bb18a432bf5f9597
+2023-05-11T01:38:35.630347Z  INFO sui::client_commands: 0x458dc58dfdacefa2dfae5dc5aca8151ac438bbdefd0c89afe7d725189f7249bd <=
+2023-05-11T01:38:35.630348Z  INFO sui::client_commands: 0x700bf947fa5dab431c30b15cc4829763ad885e627440cde477e18185f8cb0e8c
+2023-05-11T01:38:35.630349Z  INFO sui::client_commands: 0x703c182fc1875363e7480690286e035ab4e978e3dc203835bf8de1f64c7a3b2a
+2023-05-11T01:38:35.630350Z  INFO sui::client_commands: 0x79c2c7a688e0f2672d145669a947c18323cac43e6d7269b8b4f24bf5e558cf32
+2023-05-11T01:38:35.630351Z  INFO sui::client_commands: 0x8143e11266d0abb9f12d863c9bf85d97e8fd5a7e09db191569eecaf3e4964a69
+2023-05-11T01:38:35.630352Z  INFO sui::client_commands: 0x953c1ec014c48822d03cc71ee47bc56b4d5d70e808480641c045313a744b2d75
+2023-05-11T01:38:35.630353Z  INFO sui::client_commands: 0xab94e2c4f1a935037f9d19edebda70ba1764ea94b74326226cc7ee4c13582e23
+2023-05-11T01:38:35.630354Z  INFO sui::client_commands: 0xc52b5707d6226c65d6095a99ee36e971cc2eca2f95255ca8553cdecb809c3798
+2023-05-11T01:41:10.344232Z  INFO sui::client_commands: Active address switched to 0x1b0a6e9147cf4805cef253b8fc8848ca2336feb8476e0b2782052cb8f8117a44
+2023-05-11T01:41:20.114980Z  WARN sui::client_commands: Client/Server api version mismatch, client api version : 0.33.0, server api version : 1.0.0
+2023-05-11T01:41:24.342571Z  INFO sui::client_commands:                  Object ID                  |  Version   |                    Digest                    |   Owner Type    |               Object Type               
+2023-05-11T01:41:24.342599Z  INFO sui::client_commands: ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2023-05-11T01:41:24.342600Z  INFO sui::client_commands: Showing 0 results.
+2023-05-11T01:42:02.664816Z  INFO sui::client_commands:                  Object ID                  |  Version   |                    Digest                    |   Owner Type    |               Object Type               
+2023-05-11T01:42:02.664854Z  INFO sui::client_commands: ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2023-05-11T01:42:02.664856Z  INFO sui::client_commands: Showing 0 results.
+2023-05-11T01:43:22.316637Z  INFO sui::client_commands:                  Object ID                  |  Version   |                    Digest                    |   Owner Type    |               Object Type               
+2023-05-11T01:43:22.316694Z  INFO sui::client_commands: ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2023-05-11T01:43:22.316698Z  INFO sui::client_commands:  0x58ebad642e26fd276f27e9d734e45b7acf8521a88ea30e0e0feef5b23792444c |  19738487  | 4WGIG89irbQeVg/8w3k86xRnlqR3U31yW6mZHkL6sCk= |  AddressOwner   |  Some(Struct(MoveObjectType(GasCoin)))  
+2023-05-11T01:43:22.316701Z  INFO sui::client_commands: Showing 1 results.
+2023-05-11T10:51:54.720466Z  INFO sui::client_commands: Showing 17 results.
+2023-05-11T10:51:54.720914Z  INFO sui::client_commands: 0x1b0a6e9147cf4805cef253b8fc8848ca2336feb8476e0b2782052cb8f8117a44 <=
+2023-05-11T10:51:54.720915Z  INFO sui::client_commands: 0x29f4328c8f832a6802192045cca54b4d4d9c42bdb30369e30e90411b72c15337
+2023-05-11T10:51:54.720916Z  INFO sui::client_commands: 0x2a6030a7f1d42743bfc730ffdc4fbb3e31b92ef3aaa44bf419030c41f542f9bb
+2023-05-11T10:51:54.720917Z  INFO sui::client_commands: 0x2b45caa61abea3be232f0ac5fceb3fd5649f63ecf20a9f4c2d5a08fe78addd2f
+2023-05-11T10:51:54.720918Z  INFO sui::client_commands: 0x40cc47af1f42c2b0fbed2fabfb418c177f7753ab7b653ac9bb18a432bf5f9597
+2023-05-11T10:51:54.720919Z  INFO sui::client_commands: 0x458dc58dfdacefa2dfae5dc5aca8151ac438bbdefd0c89afe7d725189f7249bd
+2023-05-11T10:51:54.720920Z  INFO sui::client_commands: 0x6c2f32430f2aebc29a08e2329b9f2fdf9fd611985aafc14257bf8273311ddb34
+2023-05-11T10:51:54.720921Z  INFO sui::client_commands: 0x700bf947fa5dab431c30b15cc4829763ad885e627440cde477e18185f8cb0e8c
+2023-05-11T10:51:54.720922Z  INFO sui::client_commands: 0x703c182fc1875363e7480690286e035ab4e978e3dc203835bf8de1f64c7a3b2a
+2023-05-11T10:51:54.720923Z  INFO sui::client_commands: 0x79c2c7a688e0f2672d145669a947c18323cac43e6d7269b8b4f24bf5e558cf32
+2023-05-11T10:51:54.720924Z  INFO sui::client_commands: 0x8143e11266d0abb9f12d863c9bf85d97e8fd5a7e09db191569eecaf3e4964a69
+2023-05-11T10:51:54.720925Z  INFO sui::client_commands: 0x911a5a1064f1440799122272f3ee147332e8ec7beb47f0c7f12b60581ca606f7
+2023-05-11T10:51:54.720925Z  INFO sui::client_commands: 0x953c1ec014c48822d03cc71ee47bc56b4d5d70e808480641c045313a744b2d75
+2023-05-11T10:51:54.720926Z  INFO sui::client_commands: 0x9df1f4e7eb1df648619622171347b620739458de06aa7876877bafc0fc0328dd
+2023-05-11T10:51:54.720927Z  INFO sui::client_commands: 0xab94e2c4f1a935037f9d19edebda70ba1764ea94b74326226cc7ee4c13582e23
+2023-05-11T10:51:54.720948Z  INFO sui::client_commands: 0xc52b5707d6226c65d6095a99ee36e971cc2eca2f95255ca8553cdecb809c3798
+2023-05-11T10:51:54.720951Z  INFO sui::client_commands: 0xf95c0719de3070ae1eea952a916a539190742ce8aa2018468e1de0dab5344279
