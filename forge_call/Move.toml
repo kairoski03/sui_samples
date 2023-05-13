@@ -1,7 +1,6 @@
 [package]
 name = "forge_call"
 version = "0.0.1"
-publishied-at = "0xfab611a23cd04ae2598200bc9297faf54aefe689f17447ffd356057162aabe7f"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir="crates/sui-framework/packages/sui-framework/", rev = "testnet" }
