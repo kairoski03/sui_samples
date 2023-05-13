@@ -1,4 +1,4 @@
-module fungible_tokens::regulated_coin {
+module rc::regulated_coin {
     use sui::balance::{Self, Balance};
     use sui::tx_context::TxContext;
     use sui::object::{Self, UID};
