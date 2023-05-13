@@ -29,7 +29,7 @@ module fungible_tokens::basket {
         })
     }
 
-    public fun mint(
+    public entry fun mint(
         reserve: &mut Reserve, sui: Coin<SUI>, managed: Coin<MANAGED>, ctx: &mut TxContext
     ): Coin<BASKET> {
         let num_sui = coin::value(&sui);
@@ -43,7 +43,7 @@ module fungible_tokens::basket {
         coin::from_balance(minted_balance, ctx)
     }
 
-    public fun burn(
+    public entry fun burn(
         reserve: &mut Reserve, basket: Coin<BASKET>, ctx: &mut TxContext
     ) : (Coin<SUI>, Coin<MANAGED>) {
         let num_basket = balance::decrease_supply(&mut reserve.total_supply, coin::into_balance(basket));
