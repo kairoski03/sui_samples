@@ -4,7 +4,7 @@ version = "0.0.1"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir="crates/sui-framework/packages/sui-framework/", rev = "testnet" }
-forge = {local= "/Users/yoonsoo/IdeaProjects/sui_samples/forge_test"}
+forge = { git = "https://github.com/kairoski03/sui_samples.git", subdir= "forge/", rev= "main"}
 
 [addresses]
 forge_call = "0x0"
