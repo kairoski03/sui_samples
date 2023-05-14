@@ -6,6 +6,7 @@ module fungible_tokens::basket {
     use sui::sui::SUI;
     use sui::transfer;
     use sui::tx_context::TxContext;
+    use sui::tx_context;
 
     struct BASKET has drop {}
 
@@ -29,7 +30,14 @@ module fungible_tokens::basket {
         })
     }
 
-    public entry fun mint(
+    public entry fun mint_and_transfer(
+        reserve: &mut Reserve, sui: Coin<SUI>, managed: Coin<MANAGED>, ctx: &mut TxContext
+    ) {
+        let coin  = mint(reserve, sui, managed, ctx);
+        transfer::public_transfer(coin, tx_context::sender(ctx));
+    }
+
+    public fun mint(
         reserve: &mut Reserve, sui: Coin<SUI>, managed: Coin<MANAGED>, ctx: &mut TxContext
     ): Coin<BASKET> {
         let num_sui = coin::value(&sui);
@@ -43,7 +51,16 @@ module fungible_tokens::basket {
         coin::from_balance(minted_balance, ctx)
     }
 
-    public entry fun burn(
+    public entry fun burn_and_transfer(
+        reserve: &mut Reserve, basket: Coin<BASKET>, ctx: &mut TxContext
+    )  {
+
+        let (sui, managed) = burn(reserve, basket, ctx);
+        transfer::public_transfer(sui, tx_context::sender(ctx));
+        transfer::public_transfer(managed, tx_context::sender(ctx));
+    }
+
+    public fun burn(
         reserve: &mut Reserve, basket: Coin<BASKET>, ctx: &mut TxContext
     ) : (Coin<SUI>, Coin<MANAGED>) {
         let num_basket = balance::decrease_supply(&mut reserve.total_supply, coin::into_balance(basket));
