@@ -7,7 +7,7 @@ module fungible_tokens::managed {
     struct MANAGED has drop {}
 
     fun init(witness: MANAGED, ctx: &mut TxContext) {
-        let (treasury_cap, metadata) = coin::create_currency<MANAGED>(witness, 2, b"MANAGED", b"", b"", option::none(), ctx);
+        let (treasury_cap, metadata) = coin::create_currency<MANAGED>(witness, 2, b"MNG", b"MANAGED", b"", option::none(), ctx);
         transfer::public_freeze_object(metadata);
         transfer::public_transfer(treasury_cap, tx_context::sender(ctx))
     }
