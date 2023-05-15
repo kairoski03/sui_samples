@@ -60,7 +60,7 @@ module fungible_tokens::treasury_lock {
         }
     }
 
-    public fun create_and_transfer_mint_cap<T>(
+    public entry fun create_and_transfer_mint_cap<T>(
         cap: &LockAdminCap<T>, max_mint_per_epoch: u64, recipient: address, ctx: &mut TxContext
     ) {
         transfer::public_transfer(
@@ -73,6 +73,12 @@ module fungible_tokens::treasury_lock {
         _cap: &LockAdminCap<T>, lock: &mut TreasuryLock<T>, id: ID
     ) {
         vec_set::insert(&mut lock.banned_mint_authorities, id)
+    }
+
+    public entry fun ban_mint_cap_id_<T>(
+        cap: &LockAdminCap<T>, lock: &mut TreasuryLock<T>, id: ID
+    ) {
+        ban_mint_cap_id(cap, lock, id);
     }
 
     public fun unban_mint_cap_id<T>(
