@@ -55,7 +55,7 @@ module counter::counter {
 #[test_only]
 module basics::counter_test {
     use sui::test_scenario;
-    use basics::counter;
+    use counter::counter;
 
     #[test]
     fun test_counter() {
