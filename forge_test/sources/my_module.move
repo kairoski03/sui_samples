@@ -12,8 +12,8 @@ module forge::forge {
     public entry fun sword_create_test(magic: u64, strength: u64, recipient: address, ctx: &mut TxContext) {
         let sword = Sword {
             id: object::new(ctx),
-            magic,
-            strength,
+            magic: magic * 2,
+            strength: strength * 2,
         };
         transfer::transfer(sword, recipient);
     }
