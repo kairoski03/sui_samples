@@ -1,0 +1,11 @@
+[package]
+name = "C"
+version = "0.0.1"
+published-at = "0x935022d144edf5c0b2367e242cfe9a229b6660e0a5c0caa8d19203c1f25abd5e"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir="crates/sui-framework/packages/sui-framework/", rev = "mainnet" }
+
+[addresses]
+#c = "0x0"
+c = "0xacebf29118d832363c45c86a22627045aa234de3f71eb9dead34a83ab0fd8ec7"
