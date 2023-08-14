@@ -1,18 +1,18 @@
 module forge::forge {
     use sui::object::{Self, UID};
     use sui::transfer;
-    use sui::tx_context::TxContext;
+    use sui::tx_context::{TxContext, sender};
 
     struct Sword has key, store {
         id: UID,
         magic: u64,
     }
 
-    public entry fun create(magic: u64, recipient: address, ctx: &mut TxContext) {
+    public entry fun create(magic: u64, ctx: &mut TxContext) {
         let sword = Sword {
             id: object::new(ctx),
-            magic: magic * 2,
+            magic: magic * 1,
         };
-        transfer::transfer(sword, recipient);
+        transfer::transfer(sword, sender(ctx));
     }
 }
