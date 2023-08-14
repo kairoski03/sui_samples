@@ -1,12 +1,12 @@
 [package]
 name = "forge_call"
 version = "0.0.1"
+published-at = "0xeeaedc6cc67c42b45e395fa25b94a5c2bc403478b93dfb17facbb0a98a88b807"
 
 [dependencies]
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir="crates/sui-framework/packages/sui-framework/", rev = "testnet" }
-forge = { git = "https://github.com/kairoski03/sui_samples.git", subdir= "forge_test/", rev= "main"}
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir="crates/sui-framework/packages/sui-framework/", rev = "devnet" }
+forge = { git = "https://github.com/kairoski03/sui_samples.git", subdir="forge/", rev = "main" }
+#forge = { local = "../forge"}
 
 [addresses]
-forge_call = "0x0"
-forge = "0xfab611a23cd04ae2598200bc9297faf54aefe689f17447ffd356057162aabe7f"
-sui = "0000000000000000000000000000000000000000000000000000000000000002"
+forge_call = "0xeeaedc6cc67c42b45e395fa25b94a5c2bc403478b93dfb17facbb0a98a88b807"
